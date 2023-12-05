@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/punto3y4.css">
+    <title>Punto 3 & 4</title>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html">Volver</a>
+        <div id="frutas">
+            <h3>Lista de frutas</h3>
+            <div class="overflow">
+                <ul>
+                    <li v-for="fruit in fruitsList">
+                        <div>
+                            <img :src="fruit.url" alt="fruta.jpg">
+                            <p>{{ fruit.name }}</p>
+                            <button v-on:click="removeFruit(fruitsList.findIndex(f => f.name === fruit.name))">Eliminar</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #3498db, #9b59b6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ecf0f1;
+}
+
+.overflow {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+    padding-right: 10px;
+}
+
+.overflow::-webkit-scrollbar{
+    width: 12px;
+}
+
+.overflow::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0);
+}
+
+.overflow::-webkit-scrollbar-thumb{
+    background-color: #e74c3c;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+#frutas {
+    margin-top: 30px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+img {
+    width: auto;
+    height: 50px;
+    object-fit: cover;
+}
+
+p {
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}

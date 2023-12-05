@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/punto1y2.css">
+    <title>Punto 1 & 2</title>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html">Volver</a>
+        <div id="message">
+            <h3>Mensaje</h3>
+            <p>{{ message }}</p>
+            <div>
+                <p>
+                    Mensaje:
+                    <input type="text" v-on:input="write">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
